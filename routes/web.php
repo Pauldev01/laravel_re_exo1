@@ -21,3 +21,14 @@ Route::get('/paul', function () {
 Route::get('/welcome/{var}', function ($p) {
     return view('welcome',compact('p'));
 });
+
+Route::get('/', function () {
+    $yo = "<h2>paul</h2>";
+    return $yo;
+});
+
+Route::get('/new', function () {
+    $first = 5;
+    $second = 8;
+    return view('new' ,compact('first', 'second'));
+});
