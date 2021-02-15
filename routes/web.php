@@ -27,6 +27,11 @@ Route::get('/', function () {
     return $yo;
 });
 
+Route::get('/couleur', function () {
+    $noir = "noir";
+    return view('couleur', compact('noir'));
+});
+
 Route::get('/new', function () {
     $first = 5;
     $second = 8;

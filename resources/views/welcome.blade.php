@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <ul>
+        <li><a href="/paul"></a>rouge</li>
+        <li><a href="/welcome/{var}">vert</a></li>
+        <li><a href="/new">bleu</a></li>
+        <li><a href="/couleur">noir</a></li>
+    </ul>
     {{$p*4}}
 </body>
 </html>
