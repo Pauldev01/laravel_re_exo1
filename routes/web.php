@@ -17,3 +17,7 @@ Route::get('/paul', function () {
     $yo = "<h2>paul</h2>";
     return $yo;
 });
+
+Route::get('/welcome/{var}', function ($p) {
+    return view('welcome',compact('p'));
+});
